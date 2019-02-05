@@ -1,0 +1,28 @@
+@mixin row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #f0f0f0;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.teams {
+  @include row;
+}
+
+.scoring {
+  @include row;
+}
+
+.links {
+  @include row;
+}
