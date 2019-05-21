@@ -12,6 +12,9 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
     <div className="headerDiv">
+      <Link to="/" className="headerLink">
+        Schedule and Scores
+      </Link>
       <Link to="/players/" className="headerLink">
         Players
       </Link>

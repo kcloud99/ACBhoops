@@ -1,18 +1,18 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
-import Image from "../components/image";
+import Scores from "../components/Scores";
+import Schedule from "../components/Schedule";
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new ACB site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/players/">Go to players</Link>
+    <h1>Schedule and Scores</h1>
+    <h3>This Week</h3>
+    <Scores />
+    <h3>Next Week</h3>
+    <Scores />
+    <h3>All Games</h3>
+    <Schedule />
   </Layout>
 );
 

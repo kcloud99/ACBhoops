@@ -29,24 +29,16 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
-        <footer
-          style={{
-            background: `#F0F0F0`,
-            marginBottom: `0`,
-            height: "15vh",
-            paddingLeft: "2rem"
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-          {` `}, Built by {` `}
+        <footer>
+          © {new Date().getFullYear()} Built with
+          <a href="https://www.gatsbyjs.org">Gatsby.</a>
+          Built by
           <a
             href="https://kcloud99.github.io"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Kyle McLeod
+            Kyle McLeod.
           </a>
         </footer>
       </>

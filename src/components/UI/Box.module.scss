@@ -6,17 +6,37 @@
 }
 
 .container {
+  min-width: 100px;
   width: 100%;
+  min-height: 100px;
   height: 100%;
   border: 2px solid #f0f0f0;
   width: 33%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .teams {
-  @include row;
+  display: flex;
+  flex-direction: column;
+}
+
+.team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    font-size: 0.6rem;
+    font-weight: 100;
+  }
+}
+
+.winner {
+  font-weight: bold;
 }
 
 .scoring {

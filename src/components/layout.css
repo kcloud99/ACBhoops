@@ -59,10 +59,12 @@ header {
   color: blue;
   display: flex;
   justify-content: space-around;
+  /* min-width: 50%; */
 }
 .headerLink {
   color: white;
   text-decoration: none;
+  margin: 0 1rem;
 }
 .headerLink:hover {
   color: #1f1f1f;
@@ -70,6 +72,25 @@ header {
 .activeLink {
   color: #1f1f1f;
   font-size: 1.5rem;
+}
+.scores {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+footer {
+  background: #f0f0f0;
+  height: 8vh;
+  padding-left: 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer a {
+  margin: 0 5px;
 }
 img {
   max-width: 100%;
@@ -98,6 +119,7 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+  color: #398488;
 }
 h2 {
   margin-left: 0;
@@ -132,6 +154,7 @@ h3 {
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
   line-height: 1.1;
+  text-align: center;
 }
 h4 {
   margin-left: 0;
